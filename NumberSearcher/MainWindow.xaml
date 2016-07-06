@@ -1,0 +1,50 @@
+﻿<Window x:Class="NumberSearcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberSearcher"
+        mc:Ignorable="d"
+        Title="Поисковик" Height="350" Width="438.158" Closing="MainWindow_OnClosing">
+    <Window.DataContext>
+        <local:ThreadResultArgs></local:ThreadResultArgs>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate x:Key="ResultDataTemplate">
+            <Grid Height="Auto" Width="Auto"  Background="{Binding Brush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="26*"/>
+                    <RowDefinition Height="31*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" x:Name="ResultNumber" Content="{Binding Result}"  HorizontalAlignment="Left" Height="35" VerticalAlignment="Stretch" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" FontSize="18" FontWeight="Bold">
+                    <Label.Background>
+                        <SolidColorBrush Opacity="0"/>
+                    </Label.Background>
+                </Label>
+                <DockPanel Grid.Row="1" d:LayoutOverrides="Height, LeftMargin, RightMargin, TopMargin, BottomMargin" Grid.RowSpan="1">
+                    <Label x:Name="ThreadName" Content="{Binding Name}" HorizontalAlignment="Left" Height="25" Margin="0" VerticalAlignment="Bottom" Width="200" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="14" FontWeight="Bold">
+                        <Label.Background>
+                            <SolidColorBrush Opacity="0"/>
+                        </Label.Background>
+                    </Label>
+                    <Label x:Name="DateTime" Content="{Binding DateTime}" HorizontalAlignment="Left" Height="25" Margin="0" VerticalAlignment="Bottom" Width="200" d:LayoutOverrides="LeftPosition, RightPosition" FontSize="14" FontWeight="Bold">
+                        <Label.Background>
+                            <SolidColorBrush Opacity="0"/>
+                        </Label.Background>
+                    </Label>
+                </DockPanel>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="theardsNumberLabel" Content="Количество потоков" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="soughtValueLabel" Content="Искомое значение" HorizontalAlignment="Left" Margin="10,40.96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="intervalLabel" Content="Интервал (мс.)" HorizontalAlignment="Left" Margin="10,71.92,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="theardsNumberBox" HorizontalAlignment="Left" Height="23" Margin="137.743,12.96,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59.474"/>
+        <TextBox x:Name="soughtValueBox" HorizontalAlignment="Left" Height="23" Margin="137.743,40.96,0,0" TextWrapping="Wrap" Text="36" VerticalAlignment="Top" Width="59.474"/>
+        <TextBox x:Name="intervalBox" HorizontalAlignment="Left" Height="23" Margin="137.743,68.96,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="59.474"/>
+        <Button x:Name="StartButton" Content="Пуск" HorizontalAlignment="Left" Margin="202.217,13,0,0" VerticalAlignment="Top" Width="75" Click="StartButton_Click"/>
+        <ListView x:Name="resultsList" Margin="7,109,0,10" Height="Auto" Width="413.158" ItemTemplate="{StaticResource ResultDataTemplate}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Window>

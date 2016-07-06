@@ -1,0 +1,14 @@
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\MainWindow.g.cs
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\App.g.cs
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher_MarkupCompile.cache
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher_MarkupCompile.lref
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\bin\Debug\NumberSearcher.exe
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\bin\Debug\NumberSearcher.pdb
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\MainWindow.baml
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher.g.resources
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher.Properties.Resources.resources
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher.csproj.GenerateResource.Cache
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher.exe
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher.pdb
+c:\users\данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Данил\documents\visual studio 2015\Projects\NumberSearcher\NumberSearcher\obj\Debug\NumberSearcher.csprojResolveAssemblyReference.cache
